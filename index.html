@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Rock | Paper | Scissors</title>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <header class="container-fluid text-center bg-primary text-light text-shadow">
+    <h1>ROCK, PAPER, SCISSORS</h1>
+  </header>
+
+  <main class="container-fluid">
+    <div class="row d-flex justify-content-center align-items-center text-center my-3 tall">
+      <div class="col-3">
+        <div class="card bg-light" style="width: 18rem;">
+          <div class="card-body">
+            <h5 class="card-title">ROCK</h5>
+            <button class="btn btn-primary" onclick="play('rock')">Play Rock</button>
+          </div>
+        </div>
+      </div>
+      <div class="col-3">
+        <div class="card bg-light" style="width: 18rem;">
+          <div class="card-body">
+            <h5 class="card-title">PAPER</h5>
+            <button class="btn btn-primary" onclick="play('paper')">Play Paper</button>
+          </div>
+        </div>
+      </div>
+      <div class="col-3">
+        <div class="card bg-light" style="width: 18rem;">
+          <div class="card-body">
+            <h5 class="card-title">SCISSORS</h5>
+            <button class="btn btn-primary" onclick="play('scissors')">Play Scissors</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="row d-flex align-items-center text-center bg-secondary text-light text-shadow tall">
+      <div id="game-result" class="col-12"></div>
+    </div>
+    <div class="row bg-light d-flex align-items-center text-center tall">
+      <div class="col-4">
+        <h2>Wins:</h2>
+        <h2 id="winner"></h2>
+      </div>
+      <div class="col-4">
+        <h2>Losses:</h2>
+        <h2 id="loser"></h2>
+      </div>
+      <div class="col-4">
+        <h2>Ties:</h2>
+        <h2 id="tied"></h2>
+      </div>
+    </div>
+  </main>
+
+  <footer class="container-fluid"></footer>
+
+
+
+
+  <script src="app.js"></script>
+</body>
+
+</html>
