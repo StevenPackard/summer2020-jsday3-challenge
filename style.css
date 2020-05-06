@@ -5,4 +5,9 @@
 .tall{
   height: 200px;
 }
+
+.short{
+  max-height: 75px;
+  max-width: 75px;
+}
   
